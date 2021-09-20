@@ -1,0 +1,33 @@
+{
+  "name": "msrt-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-watch ./src/dev.js",
+    "prod": "rm -rf dist && webpack --mode production --config bundler.config.js",
+    "start": "node ./dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "fastify": "^3.21.0",
+    "fastify-cli": "^2.13.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-plugin": "^3.0.0",
+    "fastify-swagger": "^4.12.0",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "babel-watch": "^7.5.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
